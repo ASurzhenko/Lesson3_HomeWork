@@ -8,17 +8,24 @@ import java.util.Scanner;
 public class HomeWork5 {
     public static void main(String[] args) {
 
-        int a;
+        int a, b;
         int sum = 0;
-        int[] array = {3, 5, 1, 9, 56, 33, 14, -6, 0};
+        int size = 10;
+        int[] array = new int[size];
 
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the elements: ");
+
+        for (int i = 0; i < size; i++) {
+            a = scanner.nextInt();
+            array[i] = a;
+        }
         System.out.println("How much elements do you want to add?");
 
-        a = scanner.nextInt();
-        for (int i = 0; i < a; i++) {
+        b = scanner.nextInt();
+        for (int i = 0; i < b; i++) {
             sum += array[i];
         }
-        System.out.println("Sum of the first " + a + " elements is " + sum);
+        System.out.println("Sum of the first " + b + " elements is " + sum);
     }
 }
