@@ -6,19 +6,19 @@
 public class HomeWork6 {
     public static void main(String[] args) {
 
-        int size = 9;
-        int[] Array = new int[size];
-        Array = {3, 5, 1, 9, 56, 33, 14, -6, 0};
-        int max = Array[0];
-        int min = Array[0];
+
+        int[] array = {3, 5, 1, 9, 56, 33, 14, -6, 0};
+        int size = array.length;
+        int max = array[0];
+        int min = array[0];
 
         for (int i = 0; i < size; i++) {
-            System.out.print(Array[i] + " ");
-            if (Array[i] > max) {
-                max = Array[i];
+            System.out.print(array[i] + " ");
+            if (array[i] > max) {
+                max = array[i];
             }
-            if (Array[i] < min) {
-                min = Array[i];
+            if (array[i] < min) {
+                min = array[i];
             }
         }
         System.out.println();
