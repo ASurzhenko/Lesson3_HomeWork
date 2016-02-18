@@ -6,6 +6,12 @@
 public class HomeWork5 {
     public static void main(String[] args) {
 
-int Array[6] = {4,2,-7,6,10,5};
+        int size = 10;
+        int[] Array = new int[size];
+
+        for(int i = 0; i < size; i++) {
+
+        }
+
     }
 }
