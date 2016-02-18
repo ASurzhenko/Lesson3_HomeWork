@@ -7,7 +7,8 @@ public class HomeWork6 {
     public static void main(String[] args) {
 
         int size = 9;
-        int[] Array = {3, 5, 1, 9, 56, 33, 14, -6, 0};
+        int[] Array = new int[size];
+        Array = {3, 5, 1, 9, 56, 33, 14, -6, 0};
         int max = Array[0];
         int min = Array[0];
 
