@@ -6,28 +6,23 @@
 public class HomeWork8 {
     public static void main(String[] args) {
 
-        int sum1 = 0, sum2 = 0, n;
-        for (int i = 100123; i < 999999; i++) {
+        int s = 0, n;
 
-            if (i > 999) {
-                sum1 += i % 10;
-                i /= 10;
+        for (int i = 100000; i <= 999999; i++) {
+            int sum1 = 0, sum2 = 0;
+            n = i;
+            for (; n > 0; n /= 10) {
+                if (n > 999) {
+                    sum1 += n % 10;
+                } else {
+                    sum2 += n % 10;
+                }
             }
-
+            if (sum1 == sum2) {
+                s++;
+                System.out.println("Lucky ticket № " + s + " : " + i);
+            }
         }
-        System.out.println(sum1);
+        System.out.println("There are " + s + " lucky tickets!");
     }
 }
-
-
-   /* int n = 345;
-
-    int[] array = new int[3];
-    int i = 0;
-while (n > 0) {
-        array[i++] = n % 10;
-        n /= 10;
-        }
-
-        for(i = 2; i >= 0; i--) {
-        System.out.println(array[i]);*/
